@@ -79,6 +79,7 @@
     # gaming
     lutris
     piper
+    prismlauncher
 
     # dev tools
     gnumake
