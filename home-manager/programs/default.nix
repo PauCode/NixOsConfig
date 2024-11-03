@@ -18,6 +18,7 @@
     ./lmms.nix
     ./documents.nix
     ./ocr.nix
+    ./curseforge.nix
   ];
 
   programs.home-manager.enable = true;

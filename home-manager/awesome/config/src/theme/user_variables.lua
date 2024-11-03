@@ -25,7 +25,8 @@ user_vars = {
 	autostart = {
 		"picom --experimental-backends",
         "blueman-applet",
-        "nm-applet"
+        "nm-applet",
+        "xrandr --output HDMI-0 --mode 1920x1080 --pos 0x0 --output DP-4 --mode 1920x1080 --pos 1920x0 --output DP-2 --mode 1920x1080 --pos 3840x0"
 	},
 
 	-- Type 'ip a' and check your wlan and ethernet name

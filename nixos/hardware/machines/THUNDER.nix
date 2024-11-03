@@ -65,6 +65,7 @@
         splashImage = ../../assets/raven_eats_eye_2556x1440.png;
         splashMode = "stretch";
       };
+      efi.canTouchEfiVariables = true;
       timeout = 5;
     };
   };
@@ -99,6 +100,20 @@
     options = ["subvol=@log"];
   };
 
+  fileSystems."/top" = {
+    device = "/dev/disk/by-uuid/2cb484a3-6c36-43e0-81da-3dadd2e4fa16";
+    fsType = "btrfs";
+    options = ["subvol=@"];
+  };
+
+  fileSystems."/cow/games" = {
+    device = "/dev/disk/by-uuid/C2DEEE8DDEEE78D5";
+    fsType = "ntfs";
+  };
+  fileSystems."/cow/videos" = {
+    device = "/dev/disk/by-uuid/34ECFF42ECFEFD44";
+    fsType = "ntfs";
+  };
 
   swapDevices = [
     {device = "/dev/disk/by-uuid/7546e57f-dc9e-4b9a-8e2b-a5019fb95b19";}

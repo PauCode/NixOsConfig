@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+wget -O ~/Downloads/CurseForge.zip https://curseforge.overwolf.com/downloads/curseforge-latest-linux.zip
+unzip ~/Downloads/CurseForge.zip -d ~/.zip_tmp/
+mv ~/.zip_tmp/build/*.AppImage ~/.appimages/curseforge.AppImage
+rm -r ~/.zip_tmp/build
+chmod +x ~/.appimages/curseforge.AppImage
+touch ~/.local/share/applications/curseforge.desktop
+cat >~/.local/share/applications/curseforge.desktop <<EOL
+[Desktop Entry]
+Name=CurseForge
+GenericName=Mod launcher
+Icon=curseforge
+Exec=/home/paulzstorm/.appimages/curseforge.AppImage %f
+Terminal=false
+Type=Application
+Categories=Gaming;
+EOL
+chmod +x ~/.local/share/applications/curseforge.desktop
