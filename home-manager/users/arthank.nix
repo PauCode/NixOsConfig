@@ -1,7 +1,7 @@
 {
   home = {
-    username = "arthank";
-    homeDirectory = "/home/arthank";
+    username = "paulzstorm";
+    homeDirectory = "/home/paulzstorm";
     sessionVariables = {
       EDITOR = "neovim";
       TERMINAL = "alacritty";
