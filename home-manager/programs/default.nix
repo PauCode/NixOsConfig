@@ -32,14 +32,14 @@
       defaultApplications = {
         # ~/.nix-profile/share/applications/mimeinfo.cache has a much more complete list
         # no need for an exhaustive list here, just some basics
-        "text/html" = "firefox.desktop";
-        "x-scheme-handler/http" = "firefox.desktop";
-        "x-scheme-handler/https" = "firefox.desktop";
-        "x-scheme-handler/about" = "firefox.desktop";
-        "x-scheme-handler/unknown" = "firefox.desktop";
+        "text/html" = "google-chrome.desktop";
+        "x-scheme-handler/http" = "google-chrome.desktop";
+        "x-scheme-handler/https" = "google-chrome.desktop";
+        "x-scheme-handler/about" = "google-chrome.desktop";
+        "x-scheme-handler/unknown" = "google-chrome.desktop";
         "application/pdf" = ["org.pwmt.zathura-pdf-mupdf.desktop" "com.github.junrrein.PDFSlicer.desktop"];
-        "application/http" = "firefox.desktop";
-        "application/https" = "firefox.desktop";
+        "application/http" = "google-chrome.desktop";
+        "application/https" = "google-chrome.desktop";
         "application/octet-stream" = "nvim.desktop";
         "image/*" = "org.gnome.eog.desktop";
         "image/jpg" = "org.gnome.eog.desktop";
@@ -63,6 +63,7 @@
 
     # web browser
     firefox
+    google-chrome
 
     # apps
     unstable.vesktop
