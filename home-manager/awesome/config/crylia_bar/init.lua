@@ -46,6 +46,15 @@ awful.screen.connect_for_each_screen(
 		end
 
 		if s.index == 2 then
+			s.cpu_usage = require("src.widgets.cpu_info")("usage")
+			s.ram_info = require("src.widgets.ram_info")()
+
+			require("crylia_bar.left_bar")(s, { s.layoutlist, s.systray, s.taglist })
+			require("crylia_bar.center_bar")(s, { s.tasklist })
+			require("crylia_bar.right_bar")(s, { s.ram_info, s.cpu_usage, s.audio, s.date, s.clock, s.powerbutton })
+			require("crylia_bar.dock")(s, user_vars.dock_programs)
+		end
+        if s.index == 3 then
 			s.systray = require("src.widgets.systray")(s)
 			s.cpu_usage = require("src.widgets.cpu_info")("usage")
 			s.ram_info = require("src.widgets.ram_info")()
@@ -55,5 +64,6 @@ awful.screen.connect_for_each_screen(
 			require("crylia_bar.right_bar")(s, { s.ram_info, s.cpu_usage, s.audio, s.date, s.clock, s.powerbutton })
 			require("crylia_bar.dock")(s, user_vars.dock_programs)
 		end
+
 	end
 )
