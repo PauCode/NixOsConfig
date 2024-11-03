@@ -1,1 +1,0 @@
-local xrandr = require("xrandr")
