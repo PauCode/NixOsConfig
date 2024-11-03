@@ -8,6 +8,8 @@ local modkey = user_vars.modkey
 
 return gears.table.join(
 	awful.key({ modkey }, "#39", hotkeys_popup.show_help, { description = "Cheat sheet", group = "Awesome" }),
+    -- xrandr
+    awful.key({ modkey, "Shift"}, "#58", function() xrandr.xrandr() end, { description = "Run xrandr monitor setup"}),
 	-- Tag browsing
 	awful.key({ modkey }, "#113", awful.tag.viewprev, { description = "View previous tag", group = "Tag" }),
 	awful.key({ modkey }, "#114", awful.tag.viewnext, { description = "View next tag", group = "Tag" }),
