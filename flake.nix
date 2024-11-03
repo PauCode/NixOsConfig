@@ -76,22 +76,10 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
-      AWESIMOV = nixpkgs.lib.nixosSystem {
+      THUNDER = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          ./nixos/AWESIMOV.nix
-        ];
-      };
-      ASIMOWL = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
-        modules = [
-          ./nixos/ASIMOWL.nix
-        ];
-      };
-      Potato = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
-        modules = [
-          ./nixos/Potato.nix
+          ./nixos/THUNDER.nix
         ];
       };
     };
@@ -99,28 +87,12 @@
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      "arthank@AWESIMOV" = home-manager.lib.homeManagerConfiguration {
+      "paulzstorm@THUNDER" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [
           # > Our main home-manager configuration file <
-          ./home-manager/arthank_AWESIMOV.nix
-        ];
-      };
-      "arthank@ASIMOWL" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
-        extraSpecialArgs = {inherit inputs outputs;};
-        modules = [
-          # > Our main home-manager configuration file <
-          ./home-manager/arthank_ASIMOWL.nix
-        ];
-      };
-      "cheeselover@Potato" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
-        extraSpecialArgs = {inherit inputs outputs;};
-        modules = [
-          # > Our main home-manager configuration file <
-          ./home-manager/cheeselover_Potato.nix
+          ./home-manager/paulzstorm_awesome.nix
         ];
       };
     };
