@@ -77,7 +77,7 @@ user_vars = {
 	dock_programs = {
 		{ "Alacritty", "alacritty", "Alacritty" },
 		{ "nautilus", "nautilus", "Nautilus" },
-		{ "firefox", "firefox", "Firefox" },
+		{ "google-chrome", "google-chrome-stable", "Chrome" },
 		{ "vesktop", "vesktop", "Vesktop" },
 		{ "steam", "steam", "Steam" },
 	},
