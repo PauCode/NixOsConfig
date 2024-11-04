@@ -67,6 +67,7 @@
 
     # apps
     unstable.vesktop
+    obs-studio
 
     # vlc
     vlc
