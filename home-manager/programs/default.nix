@@ -75,6 +75,7 @@
     # other media players
     mpv
     cmus
+    spotify
 
     # gaming
     lutris
