@@ -95,7 +95,6 @@
     cmakeWithGui
     cmake-format
     vulkan-tools
-    mangohud
 
     # game dev
     unstable.godot_4
