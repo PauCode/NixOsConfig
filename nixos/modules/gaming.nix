@@ -17,4 +17,6 @@
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
   };
+
+  services.libinput.mouse.middleEmulation = false;
 }
