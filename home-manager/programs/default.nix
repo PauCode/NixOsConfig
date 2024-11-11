@@ -82,6 +82,7 @@
     lutris
     piper
     prismlauncher
+    xclicker
 
     # dev tools
     gnumake
