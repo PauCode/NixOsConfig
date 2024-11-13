@@ -96,7 +96,7 @@
     cmakeWithGui
     cmake-format
     vulkan-tools
-    sublime4
+    sublime3
 
     # game dev
     unstable.godot_4
