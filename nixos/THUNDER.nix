@@ -14,6 +14,7 @@
     # hardware
     ./hardware/machines/THUNDER.nix
     ./hardware/nvidia.nix
+    ./hardware/logitech_G29.nix
 
     # graphics
     ./graphics/awesomewm.nix
