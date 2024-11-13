@@ -102,6 +102,9 @@
     unstable.godot_4
     blender
 
+    # video editing
+    davinci-resolve
+
     # cad
     openscad
 
