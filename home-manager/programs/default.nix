@@ -115,5 +115,9 @@
     gimpPlugins.fourier
     gimpPlugins.texturize
     inkscape
+
+    ## vulkan
+    vulkan-loader
+    vulkan-volk
   ];
 }
