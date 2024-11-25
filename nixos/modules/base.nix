@@ -193,11 +193,6 @@
     lua54Packages.luarocks-nix
     stylua
 
-    # terminals
-    alacritty
-    termite
-    kitty
-
     # shells
     fish
 
@@ -269,9 +264,6 @@
 
     # settings
     xsettingsd
-
-    # neovim
-    inputs.neovim-flake.packages.x86_64-linux.maximal
 
     # sddm
     sddm-themes.nord

@@ -19,6 +19,7 @@
     ./documents.nix
     ./ocr.nix
     ./curseforge.nix
+    ./alacritty.nix
   ];
 
   programs.home-manager.enable = true;
@@ -54,12 +55,8 @@
 
   # Add programs
   home.packages = with pkgs; [
-    # terminals
-    termite
-    alacritty
-
-    # editor
-    inputs.neovim-flake.packages.x86_64-linux.maximal
+    # editors
+    vscode
 
     # web browser
     firefox

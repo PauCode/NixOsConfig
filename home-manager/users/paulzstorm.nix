@@ -3,7 +3,7 @@
     username = "paulzstorm";
     homeDirectory = "/home/paulzstorm";
     sessionVariables = {
-      EDITOR = "neovim";
+      EDITOR = "vscode";
       TERMINAL = "alacritty";
     };
   };

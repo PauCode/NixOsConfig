@@ -10,8 +10,6 @@
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
     nur.url = "github:nix-community/NUR";
 
-    neovim-flake.url = "github:CloudyChris/neovim-flake";
-
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
     # Libraries
