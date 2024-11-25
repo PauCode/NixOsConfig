@@ -9,7 +9,7 @@
     downloadDirPermissions = "777";
     settings = {
       umask = 0;
-      download-dir = "${config.services.transmission.home}/Downloads";
+      download-dir = "${config.services.transmission.home}/Cow/games/Downloaded setups";
       incomplete-dir-enabled = true;
       incomplete-dir = "${config.services.transmission.home}/.incomplete";
       watch-dir-enabled = true;
