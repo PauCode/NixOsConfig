@@ -108,6 +108,9 @@
     # cad
     openscad
 
+    #Torrents
+    deluge
+
     #################### apps
     # graphics
     gimp-with-plugins
