@@ -23,8 +23,8 @@
         "--adaptive-sync"
         "--hrd-enabled"
         "--rt"
-        "-W 2560"
-        "-H 1440"
+        "-W 1920"
+        "-H 1080"
         "-F nis"
         "-S integer"
       ];
